@@ -1,0 +1,87 @@
+@charset "ISO-8859-1";
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding-top: 1cm; /* Add space below the logo */
+}
+
+.company-logo {
+  width: 50px;
+  height: auto;
+  align-items: center;
+  margin-right: 10px; /* Add some space between the logo and the company name */
+  padding-left: 47%;
+}
+
+.company-name {
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #333; /* Adjust the color as needed */
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font style */
+  align-items: center;
+  padding-left: 43%;
+}
+.company-info {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  margin-bottom: 1cm; 
+}
+
+.box-container {
+  display: flex;
+  align-items: flex-start; /* Align items at the top */
+  
+  /* max-width: 1000px; Limit the maximum width of the boxes */
+  width: 95%; /* Take up full width */
+  margin-bottom: 1cm; /* Add space below the boxes */
+  margin-left: 40px; /* Add space between the 4th and 5th boxes */
+  overflow: hidden;
+}
+
+.box {
+  width: calc(30% - 10px); /* Adjusted width to fit all boxes in one row */
+  padding: 5%;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 1cm; /* Add space below each box */
+  text-align: center;
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font style */
+}
+
+.box img {
+  width: 100%; /* Make the image fill the box */
+  border-radius: 5px 5px 0 0; /* Round the top corners */
+}
+
+.box h2 {
+  font-size: 20px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.box h3 {
+  font-size: 16px;
+  color: #555;
+  margin-top: 15px;
+}
+
+.box p {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.box1, .box2,.box3,.box4,.box5 {
+  margin-right: 12px;
+}

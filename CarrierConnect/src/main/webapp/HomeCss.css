@@ -1,0 +1,491 @@
+@charset "ISO-8859-1";
+
+
+/* Navbar container */
+body{
+    font-family: Consolas;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:none;
+    color: #5c0050;
+    padding: 10px 20px;
+}
+
+.hover-button i {
+    color: black;
+}
+
+/* Logo and name */
+.logo {
+    display: flex;
+    align-items: center;
+   
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    mix-blend-mode: multiply;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+    gap: 70px;
+}
+
+.nav-links a {
+    color: #a52980;
+    text-decoration: none;
+}
+
+
+
+.nav-links :hover {
+
+    transition: scale 0.2 ease;
+
+    /* padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #a52980;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.8rem; */
+    /* transition: scale 0.2 ease; */
+    /* display: inline-block; */
+}
+.home1:hover{
+    scale: 5px;
+}
+
+/* Default button styles */
+.hover-button {
+    background-color: white; 
+    color: #a52980; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.1s; 
+    
+  }
+  
+  /* Hover effect */
+  .hover-button:hover {
+    background-color: #a52980; /* Change background color on hover */
+    color: white;
+    border-radius: 20px ;
+  }
+  
+
+/* section below navbar */
+
+.animatedhome{
+    width: 100%;
+    height: 50%;
+}
+
+
+/* Responsive Design */
+@media (max-width: 992px){
+    .nav-links .navbar .logo{
+        display: none;
+    }
+    /* .navbar .nav-links {
+
+        /* display: block; */
+    } 
+
+   
+
+
+
+
+
+/*middle section css DIV  below*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap elements to multiple lines */
+  }
+  
+  .empty-div {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+
+
+   /* CSS for apply buttoon in div */
+.applybutton {
+  position: absolute; /* Position the buttons absolutely */
+    top: -10%; /* Adjust the distance from the top */
+    right: -40px;
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.applybutton:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+.applybutton:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.applybutton:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.applybutton:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.applybutton:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.applybutton:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.applybutton:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.applybutton:disabled {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+
+/*************close requirement button******************/
+
+.closebutton {
+  position: absolute; /* Position the buttons absolutely */
+    top: -10%; /* Adjust the distance from the top */
+    right: -40px;
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.closebutton:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+.closebutton:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.closebutton:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.closebutton:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.closebutton:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.closebutton:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.closebutton:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.closebutton:disabled {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+
+   /* CSS for apply buttoon END in div */
+
+
+/* Basic styling for the search container  
+to set where it should be located*/
+
+
+/* footer section
+*/
+.footer {
+    background-color: rgb(13, 19, 60);
+    padding: 10px 0;
+    position: relative;
+    color: aliceblue;
+  }
+  
+  .footer-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 70px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: antiquewhite;
+    margin-top: 20px;
+  }
+  
+  .footer-column {
+    flex: 1; 
+    margin-right: 20px;
+    color: white;
+  }
+  
+  .footer-column h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    color: white;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+    
+    ;
+  }
+  
+  .footer-column ul li a {
+    color: #f7f7f7;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    background-color: rgb(13, 19, 60);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .parent-div {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Align items horizontally in the center */
+    background-image: url('');
+  }
+
+  /* Style for the child divs */
+  .child-div {
+    width: 800px; /* Increase width */
+    height: 400px; /* Increase height */
+    
+    border: 1px solid #ccc;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    
+  }
+  .child-div h1{
+    font-size: large;
+    text-align: center;
+  }
+.child-div p{
+    text-align: center;
+}
+
+
+
+
+/* the below code scrolling images berfore footer  icon of the facebook insta  */
+
+/* Social media icons */
+        /* Style for the container div */
+.footer_heading {
+  margin-left: 120px;
+  font-size: 30px;
+}
+
+.card-container {
+  
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  /* margin-left:24px ; */
+  align-items: center;
+}
+
+.card {
+  /* width: calc(104.99% - 100px); 
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; */
+
+position: relative;
+  display: flex;
+    flex-direction: row;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Adjust the width of the card container */
+    max-width: 1000px; /* Maximum width of the card */
+    margin-bottom: 20px;
+    padding: 20px;
+    margin-top: 50px;
+
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 35px;
+  padding-top: 40px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+
+  display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.left-content {
+  flex-basis: calc(50% - 10px); 
+    margin-right: 0px; 
+    
+      flex-basis: calc(500% - 100px);
+      margin-left:  -150px; /* Adjust this value as needed */
+    }
+    
+    
+
+
+
+.right-content {
+    flex-basis: calc(50% - 10px); /* 50% width with space between */
+    margin-right: -97px; /* Adjust space between left and right content */
+    /* background-color: yellow; */
+}
+
+.left-content,
+.right-content {
+    flex: 1; /* Equal width for left and right content */
+    padding: 10px;
+}
+
+
+
+.heading1{
+  margin-top: -30px;
+  padding-bottom: none;
+  margin-bottom: -50%
+  ;
+}
